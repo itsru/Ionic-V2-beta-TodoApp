@@ -14,8 +14,8 @@
     "strip-sourcemap-loader": "0.0.1",
     "typescript": "1.7.5"
   },
-  "name": "iontodo",
-  "description": "ionTodo: An Ionic project",
+  "name": "ionic-V2-todo",
+  "description": "ionic-V2-Todo: An Ionic project",
   "cordovaPlugins": [],
   "cordovaPlatforms": [
     "ios",

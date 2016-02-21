@@ -8,8 +8,8 @@ export class AddItemPage {
   constructor(nav: NavController, navParams: NavParams) {
     this.nav = nav;
     this.navParams = navParams;
-    this.title="";
-    this.description="";
+    this.title='';
+    this.description='';
 
   }
 
@@ -18,8 +18,7 @@ export class AddItemPage {
       title: this.title;
       description: this.description;
     }
-
-    this.navParams.get('ListPage').items.push(newItem);
+    this.navParams.get('ListPage').saveItem(newItem);
     this.nav.pop();
   }
 
