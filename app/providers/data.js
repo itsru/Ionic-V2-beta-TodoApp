@@ -27,4 +27,11 @@ export class DataService{
     let newData = JSON.stringify(this.data);
     this.storage.set('todoapp', newData);
   }
+
+  update(item, index){
+    this.data[index] = item;
+    let updatedData = JSON.stringify(this.data);
+    this.storage.set('todoapp', updatedData);
+
+  }
 }
