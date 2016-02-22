@@ -22,7 +22,6 @@ export class EditItemPage {
       title :'',
       description: ''
     };
-    this.nav.pop();
   }
 
 }

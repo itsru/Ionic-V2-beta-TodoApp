@@ -6,10 +6,12 @@ import {Page, NavParams} from 'ionic-framework/ionic';
 
 export class ItemDetailPage {
   constructor(navParams: NavParams) {
-
     this.navParams = navParams;
-    this.title=this.navParams.get('item').title;
-    this.description=this.navParams.get('item').description;
-
+    this.item =this.navParams.get('item');
   }
+
+  editItem() {
+    this.navParams.get('ListPage').editItem(false, this.item);
+  }
+
 }

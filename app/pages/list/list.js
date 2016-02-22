@@ -31,7 +31,8 @@ export class ListPage {
 
   viewItem(item){
     this.nav.push(ItemDetailPage, {
-      item: item
+      item: item,
+      ListPage: this
     });
   }
 
@@ -57,5 +58,6 @@ export class ListPage {
   updateItem(item,index) {
     this.items[index] = item;
     this.dataService.update(item, index);
+    this.nav.pop();
   }
 }
